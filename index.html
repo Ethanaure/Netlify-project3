@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- !DOCTYPE html tells browser this is using HTML5 -->
+<!-- EXAMPLE CODE HEADER/DISCLAIMER
+ 
+Project:  Project3
+Name: Ethan Aure
+Submitted: 11/8/23
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class. -->
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>My webpage</title>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- my header section contains the needed code for my header -->
+        <header class="header">
+            <div  class="headerTitle"><img src="uvu.jpg" alt="pic of house" class="uvu"></div>
+            <p>Welcome to my webpage</p>
+            <div  class="headerTitle"><img src="uvu.jpg" alt="pic of house" class="uvu2"></div>
+        </header>
+        <nav class="menu">
+            <button onclick="changePage(1)">Home</button>
+            <!-- <button onclick="changePage(2)">Favorite</button>  -->
+            <button onclick="changePage(3)">Photography</button>
+            <button onclick="changePage(4)">Contact Me</button>
+        </nav>
+        <section1 class="main display" id="main">
+            <h1>Home</h1>
+            <p>Here is a little bit about me. I enjoy riding my motorcycle,
+                playing video games, spending time in the mountains, and 
+                much more, I am studying software engineering at Utah Valley University
+                and love spending time with friends.
+            </p>
+            <p>Just below are some of my favorite things. But feel free to explore the other 
+                tabs on my site and learn a little bit more about me and things I like. </p>
+            <div class="home-container">
+                <ul>
+                    <li>Spending time in the mountains</li><br>
+                    <li>Playing video games with friends</li><br>
+                    <li>Watching movies</li><br>
+                    <li>Riding my motorcycle</li><br>
+                    <li>Skiing in the winter</li><br>
+                    <li>Spending lots of time with friends</li><br>
+                    <li>Doing some photography</li><br>
+                </ul>
+
+                <p>Also, here is a video that I have always loved...</p>
+                <div><a href="https://www.youtube.com/watch?v=nGeKSiCQkPw">Ultimate Dog Tease</a></div>
+            </div>
+            <img src="IMG_2498.jpg" alt="Picture of Ethan" class="ethan">
+        </section1>
+        <section class="favorite hide" id="favorite">
+            <h1>Some of my Favorite Things</h1>
+            <div>This page is under construction</div>
+        </section>
+        <section class="photography hide" id="photography">
+            <h1>Photography</h1>
+            <p>This semester in school I am taking a photography class. I have had the opputunity 
+                to take a lot of cool ppictures and there are some that I am proud of that I will share here.</p>
+            <figure>
+                <div><img src="reflected-river-7.jpg" alt="river pic" id="river"></div>
+                <figcaption>A tree being reflected off the water</figcaption>
+                <div><img src="pumpkins.jpg" alt="pumpkins" id="pumpkins"></div>
+                <figcaption>A pile of pumpkins behind a motorcycle</figcaption>
+                <div><img src="bike-at-stoplight.jpg" alt="bike-at-stoplight" id="bikeAtLight"></div>
+                <figcaption>A 1st person view of a stoplight from a motorcycle</figcaption>
+                <div><img src="boats.jpg" alt="A bunch of boats" id="boat"></div>
+                <figcaption>Man fishing in a lake</figcaption>
+            </figure>
+        </section>
+        <section class="contact hide" id="contact">
+            <h1>Contact Me</h1>
+            <p>If you have need to contact me please do so through canvas. <br>
+                I will also provide all my other (fake) contact information below. </p>
+            <p>Address: 42 Wallaby Way, Sydney, Australia</p>
+            <p>Email: JohnDoe@email.com</p>
+            <p>Phone Number: 123-456-7890</p>
+            <divCarGif><iframe src="https://giphy.com/embed/WUHPlp89IfsF1zZdpK" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></divCarGif>
+            <divDog><iframe src="https://giphy.com/embed/gfl7CKcgs6exW"frameBorder="0" class="giphy-embed" allowFullScreen></iframe></divDog>
+        </section>
+        <footer class="footer">
+            <p>This website was created by Ethan Aure for the CS 2550 class at UVU</p>
+        </footer>
+    </div>
+    <script>
+        // in my script is all the code for changing my page depending on what button you press
+        function changePage(page) {
+            var element = null;
+            switch(page) {
+                case 1:
+                    document.getElementById("main").classList.add("display");   //<section class="main display" id="main">
+                    document.getElementById("main").classList.remove("hide");
+                    document.getElementById("favorite").classList.add("hide");
+                    document.getElementById("favorite").classList.remove("display");
+                    document.getElementById("photography").classList.add("hide");
+                    document.getElementById("photography").classList.remove("display");
+                    document.getElementById("contact").classList.add("hide");
+                    document.getElementById("contact").classList.remove("display");
+                    break
+                case 2:
+                    document.getElementById("main").classList.add("hide");
+                    document.getElementById("main").classList.remove("display");
+                    document.getElementById("favorite").classList.add("display");
+                    document.getElementById("favorite").classList.remove("hide");
+                    document.getElementById("photography").classList.add("hide");
+                    document.getElementById("photography").classList.remove("display");
+                    document.getElementById("contact").classList.add("hide");
+                    document.getElementById("contact").classList.remove("display");
+                    break
+                case 3:
+                    document.getElementById("main").classList.add("hide");
+                    document.getElementById("main").classList.remove("display");
+                    document.getElementById("favorite").classList.add("hide");
+                    document.getElementById("favorite").classList.remove("display");
+                    document.getElementById("photography").classList.add("display");
+                    document.getElementById("photography").classList.remove("hide");
+                    document.getElementById("contact").classList.add("hide");
+                    document.getElementById("contact").classList.remove("display");
+                    break
+                case 4:
+                    document.getElementById("main").classList.add("hide");
+                    document.getElementById("main").classList.remove("display");
+                    document.getElementById("favorite").classList.add("hide");
+                    document.getElementById("favorite").classList.remove("display");
+                    document.getElementById("photography").classList.add("hide");
+                    document.getElementById("photography").classList.remove("display");
+                    document.getElementById("contact").classList.add("display");
+                    document.getElementById("contact").classList.remove("hide");
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

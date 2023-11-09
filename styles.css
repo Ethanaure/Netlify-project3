@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20%;
+    grid-template-rows: 15vh auto 15vh;
+    grid-gap: 3px;
+    height: 100vh;
+}
+/* The following to the next comment will provide all the css code for the header area */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: linear-gradient(45deg, rgb(12, 116, 0), rgba(55, 172, 143, 0.753));
+    color: white;
+    padding: 10px;
+    grid-column: 1/4;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header > p {
+    font-size: 5vb;
+}
+
+/* .headerTitle {
+    flex-shrink: ;
+} */
+
+.uvu {
+    max-height: 13vb;
+    /* width: 50%; */
+    padding: 15px;
+}
+
+.uvu2 {
+    max-height: 13vb;
+    /* width: 50%; */
+    padding: 15px;
+    float: right;
+}
+
+/* The following code provides all the code for my menu */
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: #666;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu > button {
+    background-color: #5c97ee;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: .35s;
+    width: 95%;
+    min-width: 120px;
+}
+
+.menu > button:hover {
+    background-color: #073271;
+}
+
+/* .section {
+    display: flex;
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2;
+} */
+
+.display {
+    display: unset;
+}
+
+.hide {
+    display: none;
+}
+
+/* the following code is intended for my main page */
+.main {
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.home-container {
+    float: left;
+    width: 50%;
+}
+
+.ethan {
+    float: right;
+    width: 50%;
+}
+
+/* the following code is for my photography page */
+.photography {
+    background-color: #f8fdef;
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.favorite {
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.contact {
+    background-image: url(seamless\ urban\ map.jpg);
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2
+    
+}
+
+.footer {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/4;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#river {
+    /* float: center; */
+    /* padding-left: 0%; */
+    width: 85%;   
+    padding-top: 2%; 
+}
+
+
+#pumpkins {
+    /* float: right; */
+    width: 85%;
+    padding-top: 2%;
+}
+
+#bikeAtLight {
+    /* float: left; */
+    width: 85%;
+    padding-top: 2%;
+}
+
+#boat {
+    /* float: right; */
+    width: 85%;
+    padding-top: 2%;
+}
+
+section1 {
+    background-image: url(main-back.avif);
+    /* background-repeat: repeat-x; */
+    background-size: 350px;
+    background-blend-mode: lighten;
+}
+
+divCarGif {
+    float: left;
+    width: 50%;
+}
+
+divDog {
+    float: right;
+    width: 50%;
+}
+
+li {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
