@@ -14,16 +14,16 @@ I acknowledge that  If I am found in violation of this policy this may result
 in a zero grade, a permanent record on file and possibly immediate failure of the class. -->
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link id="style" rel="stylesheet" href="main.css">
     <title>My webpage</title>
 </head>
 <body>
     <div class="grid-container">
         <!-- my header section contains the needed code for my header -->
         <header class="header">
-            <div  class="headerTitle"><img src="uvu.jpg" alt="pic of house" class="uvu"></div>
+            <div  class="headerTitle"><img id="headerPic" src="sun.webp" alt="pic of house" class="uvu"></div>
             <p>Welcome to my webpage</p>
-            <div  class="headerTitle"><img src="uvu.jpg" alt="pic of house" class="uvu2"></div>
+            <div  class="headerTitle"><img id="headerPic2" src="sun.webp" alt="pic of house" class="uvu2"></div>
         </header>
         <nav class="menu">
             <button onclick="changePage(1)">Home</button>
@@ -52,7 +52,7 @@ in a zero grade, a permanent record on file and possibly immediate failure of th
                 </ul>
 
                 <p>Also, here is a video that I have always loved...</p>
-                <iframe src="https://www.youtube.com/watch?v=nGeKSiCQkPw"></iframe>
+                <iframe src="https://www.youtube.com/embed/nGeKSiCQkPw?si=sYE1SLMffng9925Y" title="YouTube video player" class="dog-video"></iframe>
             </div>
             <img src="IMG_2498.jpg" alt="Picture of Ethan" class="ethan">
         </section1>
@@ -86,10 +86,26 @@ in a zero grade, a permanent record on file and possibly immediate failure of th
             <divDog><iframe src="https://giphy.com/embed/gfl7CKcgs6exW"frameBorder="0" class="giphy-embed" allowFullScreen></iframe></divDog>
         </section>
         <footer class="footer">
-            <p>This website was created by Ethan Aure for the CS 2550 class at UVU</p>
+            <button onclick="changeTheme()" class="theme-button">Try my other theme</button>
+            <p class="footer-content">This website was created by Ethan Aure for the CS 2550 class at UVU</p>
         </footer>
     </div>
     <script>
+        function changeTheme() {
+            style = document.getElementById("style");
+            if (style.href.includes("main.css")) {
+                style.href = "second.css";
+                document.getElementById("headerPic").src = "moon-png-44669.png"
+                document.getElementById("headerPic2").src = "moon-png-44669.png"
+            }
+            else {
+                style.href = "main.css";
+                document.getElementById("headerPic").src = "sun.webp"
+                document.getElementById("headerPic2").src = "sun.webp"
+            }
+        }
+
+
         // in my script is all the code for changing my page depending on what button you press
         function changePage(page) {
             var element = null;

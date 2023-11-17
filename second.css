@@ -1,0 +1,228 @@
+/* The main changes that I did were all just visual changes.
+In my dark theme I changes most of the screens to match a darker theme
+and changed my text to be white instead of black. To make it
+better, I made the icons at the top of the screen change from sun to moon.
+I also made it so that it can be changed back by pressing it again.
+I couldn't make the background on the contact page darker so I just switched it out. */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20%;
+    grid-template-rows: 15vh auto 15vh;
+    grid-gap: 3px;
+    height: 100vh;
+}
+/* The following to the next comment will provide all the css code for the header area */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: linear-gradient(45deg, rgb(19, 4, 73), rgba(91, 8, 8, 0.753));
+    color: white;
+    padding: 10px;
+    grid-column: 1/4;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header > p {
+    font-size: 5vb;
+}
+
+.main {
+    color: white;
+}
+
+/* .headerTitle {
+    flex-shrink: ;
+} */
+
+.uvu {
+    max-height: 13vb;
+    /* width: 50%; */
+    padding: 15px;
+}
+
+.uvu2 {
+    max-height: 13vb;
+    /* width: 50%; */
+    padding: 15px;
+    float: right;
+}
+
+/* The following code provides all the code for my menu */
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: rgb(41, 41, 47);
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu > button {
+    background-color: rgb(46, 36, 133);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: .35s;
+    width: 95%;
+    min-width: 120px;
+}
+
+.menu > button:hover {
+    background-color: rgb(4, 1, 32);
+    color: white;
+}
+
+.display {
+    display: unset;
+}
+
+.hide {
+    display: none;
+}
+
+/* the following code is intended for my main page */
+.main {
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.home-container {
+    float: left;
+    width: 50%;
+}
+
+.ethan {
+    float: right;
+    width: 50%;
+}
+
+.dog-video {
+    max-width: 448;
+    max-height: 252;
+    /* width : 30vd; */
+    /* height: 30; */
+}
+
+/* the following code is for my photography page */
+.photography {
+    background: linear-gradient(90deg, rgb(19, 4, 73), rgba(91, 8, 8, 0.753));
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.favorite {
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+ 
+.contact {
+    background-image: url(dark-urban.jpg);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.footer {
+    display: flex;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/4;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#river {
+    /* float: center; */
+    /* padding-left: 0%; */
+    width: 85%;   
+    padding-top: 2%; 
+}
+
+
+#pumpkins {
+    /* float: right; */
+    width: 85%;
+    padding-top: 2%;
+}
+
+#bikeAtLight {
+    /* float: left; */
+    width: 85%;
+    padding-top: 2%;
+}
+
+#boat {
+    /* float: right; */
+    width: 85%;
+    padding-top: 2%;
+}
+
+section1 {
+    background-image: url(main-back.avif);
+    /* background-repeat: repeat-x; */
+    background-size: 350px;
+    background-blend-mode: difference;
+    /* background-color: green; */
+}
+
+divCarGif {
+    float: left;
+    width: 50%;
+}
+
+divDog {
+    float: right;
+    width: 50%;
+}
+
+li {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    margin-right: 25vw;
+}
+
+.theme-button {
+    color: white;
+    display: flex;
+    margin-left: 6vw;
+    margin-right: 15vw;
+    min-width: 131px;
+    border-radius: 7px;
+    background-color: rgb(18, 0, 92);
+}
